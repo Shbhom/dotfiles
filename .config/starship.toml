@@ -1,0 +1,50 @@
+add_newline = false
+
+format = """$os$directory$character"""
+right_format = """$all"""
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[package]
+disabled = true
+
+[battery]
+disabled = true
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[](bold red)'
+
+[nodejs]
+format = '[󰎙 ](bold green)'
+
+[git_branch]
+symbol = ''
+format = '[$symbol$branch](bold purple)'
+
+[git_status]
+ahead = "⇡$count"
+behind = "⇣$count"
+diverged = "⇡$ahead_count⇣$behind_count"
+format = "[ $all_status$ahead_behind ]($style)"
+modified = "[!$count ](fg:#b4951e)"
+style = "fg:#b4951e"
+untracked = "[?$count ](fg:#00afff)"
+
+
+[os]
+disabled=false
+
+[os.symbols]
+Arch = " "
+EndeavourOS = " "
+
+[custom.docker]
+description = "Shows the docker symbol if the current directory has Dockerfile or docker-compose.yml files"
+command = "echo 🐳"
+files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
+when = """ command -v docker &> /dev/null; exit (echo $?); """
