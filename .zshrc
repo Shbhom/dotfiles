@@ -1,6 +1,7 @@
 eval "$(starship init zsh)"
 
 alias 'login-hornet'="su - hornet && zsh"
+alias cl="clear"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
