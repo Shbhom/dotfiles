@@ -68,3 +68,4 @@ tmux () {
   command tmux -u "$@"
 }
 
+alias lg="lazygit"

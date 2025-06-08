@@ -1,3 +1,4 @@
+#/bin/bash
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 fi
