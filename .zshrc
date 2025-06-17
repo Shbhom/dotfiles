@@ -69,3 +69,6 @@ tmux () {
 }
 
 alias lg="lazygit"
+
+export PATH=$PATH:$(go env GOPATH)/bin
+alias ft="$HOME/.config/findTailDevices.sh"

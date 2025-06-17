@@ -1,1 +1,8 @@
-.config/tmux/plugings/
+.config/tmux/plugins/
+.config/go
+.config/gopls
+.config/lazygit
+.config/user-dirs.dirs
+.config/user-dirs.locale
+
+
