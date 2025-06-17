@@ -4,5 +4,6 @@
 .config/lazygit
 .config/user-dirs.dirs
 .config/user-dirs.locale
+.config/pgcli
 
 
